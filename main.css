@@ -9,7 +9,7 @@ body {
 }
 
 .inner {
-  width: 1200px;
+  max-width: 1100px;
   position: relative;
   margin: 0 auto;
 }
@@ -68,13 +68,18 @@ header .container .logo {
 }
 
 header .container .major_name {
+  display: flex;
   position: absolute;
   left: 100px;
-  top: 30px;
+  top: 0px;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-
+  height: 80px;
+  justify-items: center;
+  align-items: center;
+}
+header .container .major_name span{
 }
 
 header .container .nav_bar {
