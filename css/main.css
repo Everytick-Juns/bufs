@@ -79,8 +79,8 @@ header .container .major_name {
   justify-items: center;
   align-items: center;
 }
-header .container .major_name span{
-}
+
+header .container .major_name span {}
 
 header .container .nav_bar {
   height: inherit;
@@ -135,18 +135,63 @@ header .container .nav_bar ul li a:hover {
 header .container .easy_guide {
   position: absolute;
   right: 100px;
-  top: 30px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 80px;
+
 }
-header .container .easy_guide a{
+
+header .container .easy_guide a {
   color: #fff;
   transform: scale(1.0);
   transition: .3s;
-  
+
 }
-header .container .easy_guide a:hover{
+
+header .container .easy_guide a:hover {
   color: aqua;
   transform: scale(1.3);
 }
+
+header .container .easy_guide .easy_guide__contents{
+  position: absolute;
+  top: 50px;
+  z-index: 9;
+  background-color: #212529;
+  border-radius: 5%;
+}
+
+header .container .easy_guide .easy_guide__contents li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  transition: .3s;
+  
+}
+header .container .easy_guide .easy_guide__contents li a{
+  margin: 0 5px 0;
+  padding: 5px;
+  display: block;
+  font-size: 14px;
+  transform: scale(1.1);
+
+}
+
+header .container .easy_guide .easy_guide__contents {
+  display: none;
+}
+
+header .container .easy_guide:hover .easy_guide__contents {
+  display: block;
+}
+
+
 
 .qrcode {
   border-bottom: 1px solid #808080;
@@ -194,8 +239,8 @@ header .container .easy_guide a:hover{
 
 .qrcode .container .inner .bwapp {}
 
-.qrcode .container .inner span{
-  color:#333;
+.qrcode .container .inner span {
+  color: #333;
 }
 
 /* footer {
