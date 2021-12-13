@@ -27,8 +27,8 @@
                       echo "<a class='dropdown-toggle' href='#' data-toggle='dropdown' id='navLogin'>Login</a>";
                       echo "<div class='dropdown-menu' style='padding:17px;'>";
                       echo "<form class='form' method='POST' id='formLogin' action='".$XVWA_WEBROOT."/bufs/xvwa/login.php'>"; 
-                      echo "<input name='username'  id='username' placeholder='Username' type='text'><br>";
-                      echo "<input name='password'  id='password' placeholder='Password' type='password'><br><br>";
+                      echo "<input name='username'  id='username' placeholder='Username (id:admin)' type='text'><br>";
+                      echo "<input name='password'  id='password' placeholder='Password (pw:admin)' type='password'><br><br>";
                       echo "<button type='submit' id='btnLogin' class='btn btn-primary pull-right'>Login</button>";
                       echo "</form></div>";
                     }
