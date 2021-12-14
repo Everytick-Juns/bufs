@@ -19,8 +19,8 @@ body {
 }
 
 .img__140 {
-  width: 140px;
-  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
   box-sizing: border-box;
 }
 
@@ -201,20 +201,23 @@ header .container .easy_guide:hover .easy_guide__contents {
 
 .qrcode .container {}
 
-.qrcode .container .inner {}
+.qrcode .container .inner {
+  text-align: center;
+}
 
 .qrcode .container .inner span {
   padding: 30px;
-  color: #461111;
   font-weight: 700;
+  color: #333;
 
 }
 
 .qrcode .container .inner .intro_container {
-
+  box-sizing: content-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .qrcode .container .inner .dvwa,
@@ -241,11 +244,6 @@ header .container .easy_guide:hover .easy_guide__contents {
 .qrcode .container .inner .bwapp:hover{
 
   transform: scale(1.2);
-}
-
-
-.qrcode .container .inner span {
-  color: #333;
 }
 
 footer {
